@@ -17,6 +17,7 @@ app.use(cors({
   origin:[
     'http://localhost:3000',
     'https://task-raktim-banerjees-projects.vercel.app/',
+    'https://task-beta-ochre-74.vercel.app/',
     'https://task-git-main-raktim-banerjees-projects.vercel.app/'
   ]
 }));
