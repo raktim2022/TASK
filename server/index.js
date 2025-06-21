@@ -13,7 +13,13 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin:[
+    'http://localhost:3000',
+    'https://task-raktim-banerjees-projects.vercel.app/',
+    'https://task-git-main-raktim-banerjees-projects.vercel.app/'
+  ]
+}));
 
 app.use('/api/items', itemRoutes);
 app.use('/api/inquiries', inquiryRoutes);
